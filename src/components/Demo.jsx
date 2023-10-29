@@ -3,14 +3,16 @@ import { copy, linkIcon, loader, tick } from "../assets";
 
 import {useLazyGetSummaryQuery} from '../services/article';
 
+
 const Demo = () => {
   const [article, setArticle] = useState({
     url: "",
     summary: "",
   });
-
+  
   const [allArticles, setAllArticles] = useState([]);
   const [copied, setCopied] = useState("");
+  const [language, setLanguage] = useState('en')
 
   //RTK Lazy Query
   const [getSummary, { error, isFetching }] = useLazyGetSummaryQuery();
@@ -29,7 +31,7 @@ const Demo = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const { data } = await getSummary({ articleUrl: article.url });
+    const { data } = await getSummary({ articleUrl: article.url, language: language, });
     if(data?.summary) {
       const newArticle = { ...article, summary: data.summary };
       const updatedAllArticles = [newArticle, ...allArticles];
@@ -77,6 +79,37 @@ const Demo = () => {
            <p>↵</p>
           </button>
         </form>
+        <section className='w-full max-w-xl'>
+          <div className= 'flex justify-end items-center' >
+            <p className= 'font-semibold'>Select Language: </p>
+            <div className='flex-row w-1/4 h-10 ml-2 mt-1 mb-1'>
+              <select
+                id="countries"
+                className="lang_input p-2.5"
+                onChange={(e) => setLanguage(e.target.value)}
+              >
+                <option value="en">English</option>
+                <option disabled>
+                  ────────────
+                </option>
+                <option value="ar">Arabic</option>
+                <option value="ca">Catalan</option>
+                <option value="zh">Chinese</option>
+                <option value="de">Deutsch</option>
+                <option value="es">Espa&#241;ol</option>
+                <option value="fr">Fran&#231;ais</option>
+                <option value="el">Greek</option>
+                <option value="he">Hebrew</option>
+                <option value="hi">Hindi</option>
+                <option value="it">Italian</option>
+                <option value="ja">Japanese</option>
+                <option value="pt">Portugu&#234;s</option>
+                <option value="ru">Russian</option>
+                <option value="uk">Ukranian</option>
+              </select>
+            </div>
+          </div>
+        </section>
 
         {/* { Browse URL History} */}
         <div className='flex flex-col gap-1 max-h-60 overflow-y-auto'>

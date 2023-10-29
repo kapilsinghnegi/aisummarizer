@@ -7,7 +7,7 @@ const Hero = () => {
             <img src={logo} alt='sumz_logo' className='w-32 object-contain' />
             <button
              type="button"
-             onClick={()=> window.open('https://github.com/kapilsinghnegi')}
+             onClick={()=> window.open('https://github.com/kapilsinghnegi/')}
              className="black_btn" 
             >
                 GitHub
@@ -19,8 +19,8 @@ const Hero = () => {
                 <span className="orange_gradient">OpenAI GPT-4</span>
             </h1>
             <h2 className="desc">
-                Simplify your reading with Summarize, an open-source article summarizer that transforms lengthy articles into clear concise summaries with the power of <br className="max-md:hidden" />
-                <span className="orange_gradient">OpenAI GPT-4</span>
+                Simplify your reading with Summarize, an open-source article summarizer that transforms lengthy articles into clear concise summaries with the power of
+                <span className="orange_gradient"> OpenAI GPT-4</span>
             </h2>
     </header>
   )
