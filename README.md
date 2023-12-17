@@ -12,16 +12,16 @@
 </p>
 
 ## About The Project
-OpenAI Article Summarizer, or "sumz", is a website designed to provide users with clear and concise summaries of articles. With just a link to the desired article, users can quickly generate a summary that is easy to read and understand. The website uses the article extractor and summary provided by RapidAPI, which enables it to extract the most important information from any given article. Built using the React framework, its state-of-the-art technology and user-friendly interface make it an excellent tool for anyone who needs to summarize articles quickly and efficiently. Additionally, sumz allows users to access their previous summary articles through the history feature easily. Also, you can get summaries in 15 popular languages.
+OpenAI Article Summarizer, or "sumz", is a website designed to provide users with clear and concise summaries of articles. With just a link to the desired article, users can quickly generate a summary that is easy to read and understand. The website uses the article extractor and summary provided by RapidAPI, which enables it to extract the most important information from any given article. Built using the React framework, its state-of-the-art technology and user-friendly interface make it an excellent tool for anyone who needs to summarize articles quickly and efficiently. Additionally, Sumz allows users to access their previous summary articles through the history feature easily. Also, you can get summaries in 15 popular languages.
 
 ### Demo
-[](url)[AI Article Summarizer](https://ai-summarizer-psi.vercel.app/)
+[](url)[AI Article Summarizer](https://ai-summariser-psi.vercel.app/)
 
 ### Tech Stack
 [![Tech Stack](https://skillicons.dev/icons?i=vite,react,tailwind,redux)](https://skillicons.dev)
 
 ### Installation for Development
-1. Download or Clone this repo by using command below:
+1. Download or Clone this repo by using the command below:
 ```
    https://github.com/kapilsinghnegi/summarizer.git
 ```
@@ -33,7 +33,7 @@ OpenAI Article Summarizer, or "sumz", is a website designed to provide users wit
   VITE_RAPID_API_ARTICLE_KEY=Your_Article_Extractor_and_Summarizer_API_KEY
 ```
 3. Project Development
-   a. Run tthe folloowing command in root folder to get the required packages
+   a. Run the following command in the root folder to get the required packages
 ```
   npm install
 ```
