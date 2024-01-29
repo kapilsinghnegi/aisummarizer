@@ -15,7 +15,7 @@
 OpenAI Article Summarizer, or "sumz", is a website designed to provide users with clear and concise summaries of articles. With just a link to the desired article, users can quickly generate a summary that is easy to read and understand. The website uses the article extractor and summary provided by RapidAPI, which enables it to extract the most important information from any given article. Built using the React framework, its state-of-the-art technology and user-friendly interface make it an excellent tool for anyone who needs to summarize articles quickly and efficiently. Additionally, Sumz allows users to access their previous summary articles through the history feature easily. Also, you can get summaries in 15 popular languages.
 
 ### Demo
-[](url)[AI Article Summarizer](https://ai-summariser-psi.vercel.app/)
+[](url)[AI Article Summarizer](https://ai-summarizer-ksn.vercel.app/)
 
 ### Tech Stack
 [![Tech Stack](https://skillicons.dev/icons?i=vite,react,tailwind,redux)](https://skillicons.dev)
