@@ -1,43 +1,102 @@
-<br/>
+<h1 align="center"> AI Article Summarizer ✨</h1>
 <p align="center">
-  <h1 align="center">AI Article Summarizer</h1>
-
-<img src="https://socialify.git.ci/kapilsinghnegi/summarizer/image?font=Source%20Code%20Pro&forks=1&issues=1&language=1&name=1&owner=1&pattern=Charlie%20Brown&pulls=1&stargazers=1&theme=Auto" alt="summarizer" width="1280" height="320" />
-
-  <p align="center">
-    Simplify your reading with Sumz, an open-source article summarizer that transforms lengthy articles into clear concise summaries with the power of OpenAI GPT-4
-    <br/>
-    <br/>
-  </p>
+<img src="https://socialify.git.ci/kapilsinghnegi/aisummarizer/image?description=1&forks=1&language=1&logo=https%3A%2F%2Fai-summarizer-ksn.vercel.app%2Fassets%2Flogo-BKw9LvFT.svg&name=1&owner=1&pattern=Charlie+Brown&stargazers=1&theme=Auto" alt="aisummarizer" width="1280" height="320" />
+</p>
+<p>
+  <strong>Summarize articles instantly using AI.</strong><br/>
+  An open-source web app that converts long articles into clear, concise summaries using modern AI — with multi-language support and history tracking.
 </p>
 
-## About The Project
-OpenAI Article Summarizer, or "sumz", is a website designed to provide users with clear and concise summaries of articles. With just a link to the desired article, users can quickly generate a summary that is easy to read and understand. The website uses the article extractor and summary provided by RapidAPI, which enables it to extract the most important information from any given article. Built using the React framework, its state-of-the-art technology and user-friendly interface make it an excellent tool for anyone who needs to summarize articles quickly and efficiently. Additionally, Sumz allows users to access their previous summary articles through the history feature easily. Also, you can get summaries in 15 popular languages.
+<p align="center">
+  🔗 <a href="https://ai-summarizer-ksn.vercel.app/" target="_blank"><strong>Live Demo</strong></a>
+</p>
 
-### Demo
-[](url)[AI Article Summarizer](https://ai-summarizer-ksn.vercel.app/)
+---
 
-### Tech Stack
-[![Tech Stack](https://skillicons.dev/icons?i=vite,react,tailwind,redux)](https://skillicons.dev)
+## 🚀 About the Project
 
-### Installation for Development
-1. Download or Clone this repo by using the command below:
+**AI Article Summarizer** is a web application that helps users quickly understand long-form articles by generating concise summaries from just a URL.
+
+The app uses an AI-powered article extraction and summarization API to identify key points and present them in an easy-to-read format. It also stores previously summarized articles locally so users can revisit them anytime.
+
+### ✨ Key Features
+
+- 🔗 Summarize articles using just a URL  
+- 🌍 Multi-language summaries (15+ languages)  
+- ⚡ Fast and responsive UI  
+- 📚 Summary history using local storage  
+- 📋 One-click copy for summaries and links  
+- 🧠 Intelligent error handling & loading states  
+- 📱 Fully responsive (mobile & desktop)  
+
+---
+
+## 🛠️ Tech Stack
+
+- **Vite** – Fast build tool  
+- **React + TypeScript** – Modern UI with strong typing  
+- **Redux Toolkit & RTK Query** – State management & API handling  
+- **Tailwind CSS** – Utility-first styling  
+- **RapidAPI** – Article extraction & summarization  
+- **Vercel** – Deployment  
+
+---
+
+## ⚙️ Installation & Local Development
+
+Follow these steps to run the project locally:
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/kapilsinghnegi/summarizer.git
+cd summarizer
 ```
-   https://github.com/kapilsinghnegi/summarizer.git
+
+### 2. Set Up Environment Variables
+
+a. Go to [RapidAPI Article Extractor and Summarizer](https://rapidapi.com/restyler/api/article-extractor-and-summarizer/)
+b. Copy your API key
+c. Create a .env file in the project root and add:
+
+```bash
+VITE_RAPID_API_ARTICLE_KEY=your_rapidapi_key_here
+VITE_BASE_URL=article-extractor-and-summarizer.p.rapidapi.com
 ```
-2. API Tokens <br/>
-  a. Go to [RapidAPI Article Extractor and Summarizer](https://rapidapi.com/restyler/api/article-extractor-and-summarizer/) <br/>
-  b. Copy the API key from code snippets <br/>
-  c. Create an .env file in your main directory and paste the API key
+
+⚠️ Make sure .env is listed in .gitignore
+
+### 3. Install Dependencies
+
+```bash
+npm install
 ```
-  VITE_RAPID_API_ARTICLE_KEY=Your_Article_Extractor_and_Summarizer_API_KEY
+
+### 4. Start the Development Server
+
+```bash
+npm run dev
 ```
-3. Project Development
-   a. Run the following command in the root folder to get the required packages
+
+The app will run at:
+
+```arduino
+http://localhost:5173
 ```
-  npm install
+
+### Production build
+
+```bash
+npm run build
 ```
-   b. Run this command to run the project on the local server
+
+### TypeScript Check
+
+To ensure full type safety:
+
+```bash
+npx tsc --noEmit
 ```
-  npm run dev
-```
+
+## ⭐ If you like this project
+Give it a ⭐ on GitHub — it really helps!
